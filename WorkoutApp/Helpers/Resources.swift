@@ -17,6 +17,7 @@ enum Resources {
         
         static let separator        =   UIColor(hexString: "#E8ECEF")
         static let darkGray         =   UIColor(hexString: "#545C77")
+        static let bgColor          =   UIColor(hexString: "#F8F9F9")
     }
     
     // MARK: - Strings

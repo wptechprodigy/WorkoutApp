@@ -11,11 +11,15 @@
 		040210442A373BE500477ED6 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040210432A373BE500477ED6 /* Resources.swift */; };
 		041C572A2A367F39007C1574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C57292A367F39007C1574 /* AppDelegate.swift */; };
 		041C572C2A367F39007C1574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C572B2A367F39007C1574 /* SceneDelegate.swift */; };
-		041C572E2A367F39007C1574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C572D2A367F39007C1574 /* ViewController.swift */; };
+		041C572E2A367F39007C1574 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C572D2A367F39007C1574 /* OverviewViewController.swift */; };
 		041C57332A367F3D007C1574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C57322A367F3D007C1574 /* Assets.xcassets */; };
 		041C57362A367F3D007C1574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C57342A367F3D007C1574 /* LaunchScreen.storyboard */; };
 		041C57402A3683A2007C1574 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C573F2A3683A2007C1574 /* TabBarController.swift */; };
 		04C0A37E2A3D3EF6005ADC74 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */; };
+		04C0A3822A3DFE54005ADC74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3812A3DFE54005ADC74 /* BaseViewController.swift */; };
+		04C0A3892A3E0145005ADC74 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3882A3E0145005ADC74 /* SessionViewController.swift */; };
+		04C0A38B2A3E0176005ADC74 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A38A2A3E0176005ADC74 /* ProgressViewController.swift */; };
+		04C0A38D2A3E0193005ADC74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A38C2A3E0193005ADC74 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +28,16 @@
 		041C57262A367F39007C1574 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041C57292A367F39007C1574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041C572B2A367F39007C1574 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		041C572D2A367F39007C1574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		041C572D2A367F39007C1574 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		041C57322A367F3D007C1574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041C57352A367F3D007C1574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041C57372A367F3D007C1574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041C573F2A3683A2007C1574 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		04C0A3812A3DFE54005ADC74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		04C0A3882A3E0145005ADC74 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		04C0A38A2A3E0176005ADC74 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		04C0A38C2A3E0193005ADC74 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +87,11 @@
 		041C57282A367F39007C1574 /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
+				04C0A3802A3DFDF8005ADC74 /* Base Setups */,
 				0402103F2A373A2600477ED6 /* Helpers */,
 				041C573E2A367FCC007C1574 /* Application */,
-				041C572D2A367F39007C1574 /* ViewController.swift */,
-				041C573F2A3683A2007C1574 /* TabBarController.swift */,
-				04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */,
+				04C0A3832A3DFE8B005ADC74 /* Views */,
+				04C0A37F2A3DFDB5005ADC74 /* Components */,
 				041C573D2A367FB8007C1574 /* Supporting Files */,
 			);
 			path = WorkoutApp;
@@ -106,6 +114,66 @@
 				041C572B2A367F39007C1574 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		04C0A37F2A3DFDB5005ADC74 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				041C573F2A3683A2007C1574 /* TabBarController.swift */,
+				04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		04C0A3802A3DFDF8005ADC74 /* Base Setups */ = {
+			isa = PBXGroup;
+			children = (
+				04C0A3812A3DFE54005ADC74 /* BaseViewController.swift */,
+			);
+			path = "Base Setups";
+			sourceTree = "<group>";
+		};
+		04C0A3832A3DFE8B005ADC74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04C0A3872A3E0130005ADC74 /* settings */,
+				04C0A3862A3E0128005ADC74 /* progress */,
+				04C0A3852A3E0121005ADC74 /* session */,
+				04C0A3842A3E0116005ADC74 /* overview */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04C0A3842A3E0116005ADC74 /* overview */ = {
+			isa = PBXGroup;
+			children = (
+				041C572D2A367F39007C1574 /* OverviewViewController.swift */,
+			);
+			path = overview;
+			sourceTree = "<group>";
+		};
+		04C0A3852A3E0121005ADC74 /* session */ = {
+			isa = PBXGroup;
+			children = (
+				04C0A3882A3E0145005ADC74 /* SessionViewController.swift */,
+			);
+			path = session;
+			sourceTree = "<group>";
+		};
+		04C0A3862A3E0128005ADC74 /* progress */ = {
+			isa = PBXGroup;
+			children = (
+				04C0A38A2A3E0176005ADC74 /* ProgressViewController.swift */,
+			);
+			path = progress;
+			sourceTree = "<group>";
+		};
+		04C0A3872A3E0130005ADC74 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				04C0A38C2A3E0193005ADC74 /* SettingsViewController.swift */,
+			);
+			path = settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,11 +246,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041C572E2A367F39007C1574 /* ViewController.swift in Sources */,
+				041C572E2A367F39007C1574 /* OverviewViewController.swift in Sources */,
 				041C57402A3683A2007C1574 /* TabBarController.swift in Sources */,
+				04C0A38D2A3E0193005ADC74 /* SettingsViewController.swift in Sources */,
 				040210422A373A8100477ED6 /* UIColor+Ext.swift in Sources */,
+				04C0A3892A3E0145005ADC74 /* SessionViewController.swift in Sources */,
 				04C0A37E2A3D3EF6005ADC74 /* NavBarController.swift in Sources */,
+				04C0A38B2A3E0176005ADC74 /* ProgressViewController.swift in Sources */,
 				040210442A373BE500477ED6 /* Resources.swift in Sources */,
+				04C0A3822A3DFE54005ADC74 /* BaseViewController.swift in Sources */,
 				041C572A2A367F39007C1574 /* AppDelegate.swift in Sources */,
 				041C572C2A367F39007C1574 /* SceneDelegate.swift in Sources */,
 			);
