@@ -16,6 +16,8 @@ final class NavBarController: UINavigationController {
         configure()
     }
     
+    // MARK: -
+    
     private func configure() {
         view.backgroundColor = .white
         navigationBar.isTranslucent = false
@@ -23,5 +25,9 @@ final class NavBarController: UINavigationController {
             .foregroundColor: Resources.Colors.darkGray,
             .font: Resources.Fonts.helveticaRegular(of: 17)
         ]
+        navigationBar
+            .addBottomBorder(
+                of: Resources.Colors.separator, 
+                height: 1)
     }
 }

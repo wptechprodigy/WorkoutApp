@@ -13,5 +13,10 @@ class SessionViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = Resources.Strings.NavBar.session
+        navigationController?.tabBarItem.title = Resources.Strings.TabBar.session
+        
+        addNavBarButton(at: .left, with: Resources.Strings.Session.leftNavBar)
+        addNavBarButton(at: .right, with: Resources.Strings.Session.rightNavBar)
     }
 }

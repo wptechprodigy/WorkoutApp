@@ -13,5 +13,6 @@ class SettingsViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = Resources.Strings.NavBar.settings
     }
 }

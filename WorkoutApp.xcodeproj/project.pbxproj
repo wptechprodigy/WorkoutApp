@@ -20,6 +20,8 @@
 		04C0A3892A3E0145005ADC74 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3882A3E0145005ADC74 /* SessionViewController.swift */; };
 		04C0A38B2A3E0176005ADC74 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A38A2A3E0176005ADC74 /* ProgressViewController.swift */; };
 		04C0A38D2A3E0193005ADC74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A38C2A3E0193005ADC74 /* SettingsViewController.swift */; };
+		04C0A38F2A3E552F005ADC74 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A38E2A3E552F005ADC74 /* UIView+Ext.swift */; };
+		04C0A3922A3F22A2005ADC74 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3912A3F22A2005ADC74 /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		04C0A3882A3E0145005ADC74 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		04C0A38A2A3E0176005ADC74 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		04C0A38C2A3E0193005ADC74 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		04C0A38E2A3E552F005ADC74 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		04C0A3912A3F22A2005ADC74 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				040210412A373A8100477ED6 /* UIColor+Ext.swift */,
+				04C0A38E2A3E552F005ADC74 /* UIView+Ext.swift */,
 			);
 			path = "UIKit Extensions";
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 		04C0A3842A3E0116005ADC74 /* overview */ = {
 			isa = PBXGroup;
 			children = (
+				04C0A3902A3F228F005ADC74 /* Views */,
 				041C572D2A367F39007C1574 /* OverviewViewController.swift */,
 			);
 			path = overview;
@@ -174,6 +180,14 @@
 				04C0A38C2A3E0193005ADC74 /* SettingsViewController.swift */,
 			);
 			path = settings;
+			sourceTree = "<group>";
+		};
+		04C0A3902A3F228F005ADC74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04C0A3912A3F22A2005ADC74 /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +266,8 @@
 				040210422A373A8100477ED6 /* UIColor+Ext.swift in Sources */,
 				04C0A3892A3E0145005ADC74 /* SessionViewController.swift in Sources */,
 				04C0A37E2A3D3EF6005ADC74 /* NavBarController.swift in Sources */,
+				04C0A3922A3F22A2005ADC74 /* SecondaryButton.swift in Sources */,
+				04C0A38F2A3E552F005ADC74 /* UIView+Ext.swift in Sources */,
 				04C0A38B2A3E0176005ADC74 /* ProgressViewController.swift in Sources */,
 				040210442A373BE500477ED6 /* Resources.swift in Sources */,
 				04C0A3822A3DFE54005ADC74 /* BaseViewController.swift in Sources */,
