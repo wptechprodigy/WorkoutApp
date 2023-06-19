@@ -9,10 +9,23 @@ import UIKit
 
 class SessionViewController: BaseViewController {
     
-    // MARK: -  Lifecycle
+    // MARK: - Properties
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+}
+
+extension SessionViewController {
+    
+    override func setupViews() {
+        super.setupViews()
+    }
+    
+    override func constrainViews() {
+        super.constrainViews()
+    }
+    
+    override func configureAppearance() {
+        super.configureAppearance()
         title = R.Strings.NavBar.session
         navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .session)
         

@@ -42,7 +42,7 @@ extension OverviewNavBar {
             allWorkoutsButton,
             addButton,
             weekView
-        ].forEach { addView($0) }
+        ].forEach { setupView($0) }
     }
     
     override func constrainViews() {
