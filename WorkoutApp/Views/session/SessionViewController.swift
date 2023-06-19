@@ -12,7 +12,7 @@ class SessionViewController: BaseViewController {
     // MARK: - Properties
     
     private let timerView: BaseInfoView = {
-        let v = BaseInfoView(with: "Test", alignment: .center)
+        let v = BaseInfoView()
         return v
     }()
 }

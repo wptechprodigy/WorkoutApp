@@ -105,11 +105,9 @@
 		041C57282A367F39007C1574 /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
-				04C0A3802A3DFDF8005ADC74 /* Base Setups */,
 				0402103F2A373A2600477ED6 /* Helpers */,
 				041C573E2A367FCC007C1574 /* Application */,
 				04C0A3832A3DFE8B005ADC74 /* Views */,
-				04C0A37F2A3DFDB5005ADC74 /* Components */,
 				041C573D2A367FB8007C1574 /* Supporting Files */,
 			);
 			path = WorkoutApp;
@@ -146,25 +144,28 @@
 		04C0A37F2A3DFDB5005ADC74 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				04C0A3912A3F22A2005ADC74 /* SecondaryButton.swift */,
 				041C573F2A3683A2007C1574 /* TabBarController.swift */,
 				04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		04C0A3802A3DFDF8005ADC74 /* Base Setups */ = {
+		04C0A3802A3DFDF8005ADC74 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				04C0A3812A3DFE54005ADC74 /* BaseViewController.swift */,
 				04C0A3952A3F5A4D005ADC74 /* BaseView.swift */,
 				04B875962A40A9E5002CBDD4 /* BaseInfoView.swift */,
 			);
-			path = "Base Setups";
+			path = Base;
 			sourceTree = "<group>";
 		};
 		04C0A3832A3DFE8B005ADC74 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04C0A37F2A3DFDB5005ADC74 /* Components */,
+				04C0A3802A3DFDF8005ADC74 /* Base */,
 				04C0A3872A3E0130005ADC74 /* settings */,
 				04C0A3862A3E0128005ADC74 /* progress */,
 				04C0A3852A3E0121005ADC74 /* session */,
@@ -210,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				04ACCBE32A407C9E00CD3C5C /* WeekView */,
-				04C0A3912A3F22A2005ADC74 /* SecondaryButton.swift */,
 				04C0A3932A3F5A25005ADC74 /* OverviewNavBar.swift */,
 			);
 			path = Views;

@@ -18,6 +18,12 @@ class BaseInfoView: BaseView {
         return label
     }()
     
+    private let periodButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .red.withAlphaComponent(0.45)
+        return button
+    }()
+    
     private let contentView: UIView = {
         let v = UIView()
         v.backgroundColor = .white
@@ -30,22 +36,32 @@ class BaseInfoView: BaseView {
     // MARK: - Initializer
     
     init(with title: String? = nil,
-         alignment: NSTextAlignment = .left
+         buttonTitle: String? = nil
     ) {
         titleLabel.text = title?.uppercased()
-        titleLabel.textAlignment = alignment
+        titleLabel.textAlignment = buttonTitle == nil ? .center : .left
+        
+        periodButton.setTitle(buttonTitle, for: .normal)
+        periodButton.isHidden = buttonTitle == nil ? true : false
+        
         super.init(frame: .zero)
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(frame: .zero)
+    }
+    
+    // MARK: - Actions
+    
+    func periodButtonAction(target: Any?, action: Selector) {
+        periodButton.addTarget(target, action: action, for: .touchUpInside)
     }
 }
 
 extension BaseInfoView {
     override func setupViews() {
         super.setupViews()
-        [titleLabel, contentView].forEach { setupView($0) }
+        [titleLabel, periodButton, contentView].forEach { setupView($0) }
     }
     
     override func constrainViews() {
@@ -60,10 +76,16 @@ extension BaseInfoView {
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             
+            periodButton.trailingAnchor.constraint(equalTo: trailingAnchor),
+            periodButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
+            periodButton.heightAnchor.constraint(equalToConstant: 30),
+            periodButton.widthAnchor.constraint(equalToConstant: 130),
+            
             contentView.topAnchor.constraint(equalTo: contentViewTopAnchor, constant: contentViewOffset),
             contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            contentView.leadingAnchor.constraint(equalTo: leadingAnchor)
+            contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            contentView.heightAnchor.constraint(equalToConstant: 250)
         ])
     }
     
