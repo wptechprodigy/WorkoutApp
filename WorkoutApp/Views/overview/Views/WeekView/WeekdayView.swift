@@ -31,10 +31,8 @@ extension WeekView {
             [ nameLabel, dateLabel ].forEach { lbl in
                 lbl.font = lbl == nameLabel ? Resources.Fonts.helveticaRegular(of: 10) : Resources.Fonts.helveticaRegular(of: 15)
                 lbl.textColor = isToday ? .white : Resources.Colors.inactive
+                lbl.text = lbl == nameLabel ? name.uppercased() : "\(day)"
             }
-            
-            nameLabel.text = name.uppercased()
-            dateLabel.text = "\(day)"
         }
     }
 }
