@@ -16,6 +16,8 @@
 		041C57362A367F3D007C1574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C57342A367F3D007C1574 /* LaunchScreen.storyboard */; };
 		041C57402A3683A2007C1574 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C573F2A3683A2007C1574 /* TabBarController.swift */; };
 		04ACCBE52A407CAC00CD3C5C /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCBE42A407CAC00CD3C5C /* WeekView.swift */; };
+		04ACCBE72A40812000CD3C5C /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCBE62A40812000CD3C5C /* WeekdayView.swift */; };
+		04ACCBE92A40921C00CD3C5C /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCBE82A40921C00CD3C5C /* Date+Ext.swift */; };
 		04C0A37E2A3D3EF6005ADC74 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */; };
 		04C0A3822A3DFE54005ADC74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3812A3DFE54005ADC74 /* BaseViewController.swift */; };
 		04C0A3892A3E0145005ADC74 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3882A3E0145005ADC74 /* SessionViewController.swift */; };
@@ -39,6 +41,8 @@
 		041C57372A367F3D007C1574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041C573F2A3683A2007C1574 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		04ACCBE42A407CAC00CD3C5C /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		04ACCBE62A40812000CD3C5C /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		04ACCBE82A40921C00CD3C5C /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		04C0A3812A3DFE54005ADC74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		04C0A3882A3E0145005ADC74 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			children = (
 				040210412A373A8100477ED6 /* UIColor+Ext.swift */,
 				04C0A38E2A3E552F005ADC74 /* UIView+Ext.swift */,
+				04ACCBE82A40921C00CD3C5C /* Date+Ext.swift */,
 			);
 			path = "UIKit Extensions";
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				04ACCBE42A407CAC00CD3C5C /* WeekView.swift */,
+				04ACCBE62A40812000CD3C5C /* WeekdayView.swift */,
 			);
 			path = WeekView;
 			sourceTree = "<group>";
@@ -286,11 +292,13 @@
 				04C0A3892A3E0145005ADC74 /* SessionViewController.swift in Sources */,
 				04C0A37E2A3D3EF6005ADC74 /* NavBarController.swift in Sources */,
 				04C0A3922A3F22A2005ADC74 /* SecondaryButton.swift in Sources */,
+				04ACCBE92A40921C00CD3C5C /* Date+Ext.swift in Sources */,
 				04C0A38F2A3E552F005ADC74 /* UIView+Ext.swift in Sources */,
 				04C0A38B2A3E0176005ADC74 /* ProgressViewController.swift in Sources */,
 				040210442A373BE500477ED6 /* Resources.swift in Sources */,
 				04C0A3822A3DFE54005ADC74 /* BaseViewController.swift in Sources */,
 				04C0A3962A3F5A4D005ADC74 /* BaseView.swift in Sources */,
+				04ACCBE72A40812000CD3C5C /* WeekdayView.swift in Sources */,
 				041C572A2A367F39007C1574 /* AppDelegate.swift in Sources */,
 				041C572C2A367F39007C1574 /* SceneDelegate.swift in Sources */,
 			);
