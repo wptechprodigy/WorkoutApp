@@ -15,6 +15,7 @@
 		041C57332A367F3D007C1574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C57322A367F3D007C1574 /* Assets.xcassets */; };
 		041C57362A367F3D007C1574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C57342A367F3D007C1574 /* LaunchScreen.storyboard */; };
 		041C57402A3683A2007C1574 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C573F2A3683A2007C1574 /* TabBarController.swift */; };
+		04ACCBE52A407CAC00CD3C5C /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCBE42A407CAC00CD3C5C /* WeekView.swift */; };
 		04C0A37E2A3D3EF6005ADC74 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */; };
 		04C0A3822A3DFE54005ADC74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3812A3DFE54005ADC74 /* BaseViewController.swift */; };
 		04C0A3892A3E0145005ADC74 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3882A3E0145005ADC74 /* SessionViewController.swift */; };
@@ -37,6 +38,7 @@
 		041C57352A367F3D007C1574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041C57372A367F3D007C1574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041C573F2A3683A2007C1574 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		04ACCBE42A407CAC00CD3C5C /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		04C0A37D2A3D3EF6005ADC74 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		04C0A3812A3DFE54005ADC74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		04C0A3882A3E0145005ADC74 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		04ACCBE32A407C9E00CD3C5C /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				04ACCBE42A407CAC00CD3C5C /* WeekView.swift */,
+			);
+			path = WeekView;
+			sourceTree = "<group>";
+		};
 		04C0A37F2A3DFDB5005ADC74 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 		04C0A3902A3F228F005ADC74 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04ACCBE32A407C9E00CD3C5C /* WeekView */,
 				04C0A3912A3F22A2005ADC74 /* SecondaryButton.swift */,
 				04C0A3932A3F5A25005ADC74 /* OverviewNavBar.swift */,
 			);
@@ -266,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ACCBE52A407CAC00CD3C5C /* WeekView.swift in Sources */,
 				041C572E2A367F39007C1574 /* OverviewViewController.swift in Sources */,
 				041C57402A3683A2007C1574 /* TabBarController.swift in Sources */,
 				04C0A3942A3F5A25005ADC74 /* OverviewNavBar.swift in Sources */,
