@@ -37,8 +37,8 @@ final class SecondaryButton: UIButton {
 private extension SecondaryButton {
     
     func addViews() {
-        addSubview(btnTitleLabel)
-        addSubview(iconView)
+        addView(btnTitleLabel)
+        addView(iconView)
     }
     
     func layoutViews() {
@@ -63,14 +63,12 @@ private extension SecondaryButton {
     }
     
     func configureBtnTitle() {
-        btnTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         btnTitleLabel.textColor = Resources.Colors.active
         btnTitleLabel.textAlignment = .center
         btnTitleLabel.font = Resources.Fonts.helveticaRegular(of: 15)
     }
     
     func configureIconView() {
-        iconView.translatesAutoresizingMaskIntoConstraints = false
         iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor = Resources.Colors.active
     }

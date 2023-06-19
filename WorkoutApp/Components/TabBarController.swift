@@ -73,5 +73,3 @@ final class TabBarController: UITabBarController {
         ], animated: true)
     }
 }
-
-extension TabBarController {}
