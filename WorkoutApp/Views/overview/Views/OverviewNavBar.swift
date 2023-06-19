@@ -19,8 +19,8 @@ final class OverviewNavBar: BaseView {
     // MARK: - Lifecycle
     
     override func layoutSubviews() {
-        super.layoutViews()
-        addBottomBorder(of: Resources.Colors.separator, height: 1)
+        super.constrainViews()
+        addBottomBorder(of: R.Colors.separator, height: 1)
     }
     
     // MARK: - Behaviours
@@ -35,8 +35,8 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         [
             titleLabel,
             allWorkoutsButton,
@@ -45,8 +45,8 @@ extension OverviewNavBar {
         ].forEach { addView($0) }
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constrainViews() {
+        super.constrainViews()
         
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -71,16 +71,16 @@ extension OverviewNavBar {
         ])
     }
     
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .white
         
-        titleLabel.text = Resources.Strings.NavBar.overview
-        titleLabel.textColor = Resources.Colors.darkGray
-        titleLabel.font = Resources.Fonts.helveticaRegular(of: 22)
+        titleLabel.text = R.Strings.NavBar.overview
+        titleLabel.textColor = R.Colors.darkGray
+        titleLabel.font = R.Fonts.helveticaRegular(of: 22)
         
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkoutsButton)
+        allWorkoutsButton.setTitle(R.Strings.Overview.allWorkoutsButton)
         
-        addButton.setImage(Resources.Images.Common.add, for: .normal)
+        addButton.setImage(R.Images.Common.add, for: .normal)
     }
 }

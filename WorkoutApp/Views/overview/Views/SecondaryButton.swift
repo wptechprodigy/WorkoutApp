@@ -55,7 +55,7 @@ private extension SecondaryButton {
     }
     
     func configure() {
-        backgroundColor = Resources.Colors.seccondary
+        backgroundColor = R.Colors.seccondary
         layer.cornerRadius = 14
         makeSystem(self)
         configureBtnTitle()
@@ -63,13 +63,13 @@ private extension SecondaryButton {
     }
     
     func configureBtnTitle() {
-        btnTitleLabel.textColor = Resources.Colors.active
+        btnTitleLabel.textColor = R.Colors.active
         btnTitleLabel.textAlignment = .center
-        btnTitleLabel.font = Resources.Fonts.helveticaRegular(of: 15)
+        btnTitleLabel.font = R.Fonts.helveticaRegular(of: 15)
     }
     
     func configureIconView() {
-        iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = Resources.Colors.active
+        iconView.image = R.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
+        iconView.tintColor = R.Colors.active
     }
 }

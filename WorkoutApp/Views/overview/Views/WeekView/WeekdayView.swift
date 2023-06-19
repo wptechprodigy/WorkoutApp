@@ -26,11 +26,11 @@ extension WeekView {
             
             let isToday = currentDay.stripTime() == Date().stripTime()
             
-            backgroundColor = isToday ? Resources.Colors.active : Resources.Colors.bgColor
+            backgroundColor = isToday ? R.Colors.active : R.Colors.bgColor
             
             [ nameLabel, dateLabel ].forEach { lbl in
-                lbl.font = lbl == nameLabel ? Resources.Fonts.helveticaRegular(of: 10) : Resources.Fonts.helveticaRegular(of: 15)
-                lbl.textColor = isToday ? .white : Resources.Colors.inactive
+                lbl.font = lbl == nameLabel ? R.Fonts.helveticaRegular(of: 10) : R.Fonts.helveticaRegular(of: 15)
+                lbl.textColor = isToday ? .white : R.Colors.inactive
                 lbl.text = lbl == nameLabel ? name.uppercased() : "\(day)"
             }
         }
@@ -38,15 +38,15 @@ extension WeekView {
 }
 
 extension WeekView.WeekdayView {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         
         addView(stackView)
         [ nameLabel, dateLabel ].forEach { stackView.addArrangedSubview($0) }
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constrainViews() {
+        super.constrainViews()
         
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -54,9 +54,9 @@ extension WeekView.WeekdayView {
         ])
     }
     
-    override func configureViews() {
-        super.configureViews()
-        backgroundColor = Resources.Colors.bgColor
+    override func configureAppearance() {
+        super.configureAppearance()
+        backgroundColor = R.Colors.bgColor
         
         layer.cornerRadius = 5
         layer.masksToBounds = true
