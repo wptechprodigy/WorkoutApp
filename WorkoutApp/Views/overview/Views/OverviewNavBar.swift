@@ -12,7 +12,11 @@ final class OverviewNavBar: BaseView {
     // MARK: - Properties
     
     private let titleLabel = UILabel()
-    private let allWorkoutsButton = SecondaryButton()
+    private let allWorkoutsButton: WAButton = {
+        let button = WAButton(with: .secondary)
+        button.setTitle(R.Strings.Overview.allWorkoutsButton)
+        return button
+    }()
     private let addButton = UIButton()
     private let weekView = WeekView()
     
@@ -24,10 +28,6 @@ final class OverviewNavBar: BaseView {
     }
     
     // MARK: - Behaviours
-    
-    func addAllworkoutsAction(_ action: Selector, with target: Any?) {
-        allWorkoutsButton.addTarget(target, action: action, for: .touchUpInside)
-    }
     
     func addAddWorkoutAction(_ action: Selector, with target: Any?) {
         addButton.addTarget(target, action: action, for: .touchUpInside)
@@ -57,7 +57,6 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
@@ -78,8 +77,6 @@ extension OverviewNavBar {
         titleLabel.text = R.Strings.NavBar.overview
         titleLabel.textColor = R.Colors.darkGray
         titleLabel.font = R.Fonts.helveticaRegular(of: 22)
-        
-        allWorkoutsButton.setTitle(R.Strings.Overview.allWorkoutsButton)
         
         addButton.setImage(R.Images.Common.add, for: .normal)
     }

@@ -1,5 +1,5 @@
 //
-//  NavBarController.swift
+//  WANavBarController.swift
 //  WorkoutApp
 //
 //  Created by waheedCodes on 17/06/2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NavBarController: UINavigationController {
+final class WANavBarController: UINavigationController {
     
     // MARK: - Lifecycle
     

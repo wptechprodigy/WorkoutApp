@@ -1,5 +1,5 @@
 //
-//  TabBarController.swift
+//  WATabBarController.swift
 //  WorkoutApp
 //
 //  Created by waheedCodes on 11/06/2023.
@@ -14,7 +14,7 @@ enum Tabs: Int, CaseIterable {
     case settings
 }
 
-final class TabBarController: UITabBarController {
+final class WATabBarController: UITabBarController {
     
     // MARK: - Initializer
     
@@ -27,6 +27,10 @@ final class TabBarController: UITabBarController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func switchTo(tab: Tabs) {
+        selectedIndex = tab.rawValue
+    }
+    
     // MARK: - Configuration
     
     private func configure() {
@@ -37,8 +41,8 @@ final class TabBarController: UITabBarController {
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        let controllers: [NavBarController] = Tabs.allCases.map { tab in
-            let controller = NavBarController(rootViewController: getController(for: tab))
+        let controllers: [WANavBarController] = Tabs.allCases.map { tab in
+            let controller = WANavBarController(rootViewController: getController(for: tab))
             controller.tabBarItem = UITabBarItem(title: R.Strings.TabBar.title(for: tab),
                                                  image: R.Images.TabBar.icon(for: tab),
                                                  tag: tab.rawValue)

@@ -11,8 +11,8 @@ class SessionViewController: BaseViewController {
     
     // MARK: - Properties
     
-    private let timerView: BaseInfoView = {
-        let v = BaseInfoView()
+    private let timerView: WABaseInfoView = {
+        let v = WABaseInfoView(with: "Test", buttonTitle: "Test Button")
         return v
     }()
 }

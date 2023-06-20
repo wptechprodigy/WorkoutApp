@@ -1,5 +1,5 @@
 //
-//  BaseInfoView.swift
+//  WABaseInfoView.swift
 //  WorkoutApp
 //
 //  Created by waheedCodes on 19/06/2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseInfoView: BaseView {
+class WABaseInfoView: BaseView {
     
     // MARK: - Properties
     
@@ -18,11 +18,7 @@ class BaseInfoView: BaseView {
         return label
     }()
     
-    private let periodButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .red.withAlphaComponent(0.45)
-        return button
-    }()
+    private let periodButton = WAButton(with: .primary)
     
     private let contentView: UIView = {
         let v = UIView()
@@ -41,7 +37,7 @@ class BaseInfoView: BaseView {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
         
-        periodButton.setTitle(buttonTitle, for: .normal)
+        periodButton.setTitle(buttonTitle)
         periodButton.isHidden = buttonTitle == nil ? true : false
         
         super.init(frame: .zero)
@@ -58,7 +54,7 @@ class BaseInfoView: BaseView {
     }
 }
 
-extension BaseInfoView {
+extension WABaseInfoView {
     override func setupViews() {
         super.setupViews()
         [titleLabel, periodButton, contentView].forEach { setupView($0) }
@@ -78,8 +74,7 @@ extension BaseInfoView {
             
             periodButton.trailingAnchor.constraint(equalTo: trailingAnchor),
             periodButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            periodButton.heightAnchor.constraint(equalToConstant: 30),
-            periodButton.widthAnchor.constraint(equalToConstant: 130),
+            periodButton.heightAnchor.constraint(equalToConstant: 28),
             
             contentView.topAnchor.constraint(equalTo: contentViewTopAnchor, constant: contentViewOffset),
             contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
