@@ -10,7 +10,7 @@ import UIKit
 extension UIColor {
     
     /// Initializes a Color object using its hex value
-    /// - Parameter hexString: hex value of color
+    /// - Parameter hexString: hex value of color with the `#` sign
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt64()

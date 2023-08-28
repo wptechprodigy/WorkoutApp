@@ -42,7 +42,10 @@ extension WeekView.WeekdayView {
         super.setupViews()
         
         setupView(stackView)
-        [ nameLabel, dateLabel ].forEach { stackView.addArrangedSubview($0) }
+        [
+            nameLabel,
+            dateLabel
+        ].forEach { stackView.addArrangedSubview($0) }
     }
     
     override func constrainViews() {

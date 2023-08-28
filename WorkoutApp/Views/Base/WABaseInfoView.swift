@@ -17,9 +17,7 @@ class WABaseInfoView: BaseView {
         label.textColor = R.Colors.inactive
         return label
     }()
-    
     private let periodButton = WAButton(with: .primary)
-    
     private let contentView: UIView = {
         let v = UIView()
         v.backgroundColor = .white

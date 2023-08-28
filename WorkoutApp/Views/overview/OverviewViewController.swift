@@ -17,13 +17,11 @@ class OverviewViewController: BaseViewController {
 extension OverviewViewController {
     override func setupViews() {
         super.setupViews()
-        
         view.setupView(navBar)
     }
     
     override func constrainViews() {
         super.constrainViews()
-        
         NSLayoutConstraint.activate([
             navBar.topAnchor.constraint(equalTo: view.topAnchor),
             navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
