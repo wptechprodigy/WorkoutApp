@@ -28,6 +28,8 @@
 		04C0A3922A3F22A2005ADC74 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3912A3F22A2005ADC74 /* WAButton.swift */; };
 		04C0A3942A3F5A25005ADC74 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3932A3F5A25005ADC74 /* OverviewNavBar.swift */; };
 		04C0A3962A3F5A4D005ADC74 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A3952A3F5A4D005ADC74 /* BaseView.swift */; };
+		04F2C2332A9C8F6400A62F60 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C2322A9C8F6400A62F60 /* ProgressView.swift */; };
+		04F2C2352A9C8F8500A62F60 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C2342A9C8F8500A62F60 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		04C0A3912A3F22A2005ADC74 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		04C0A3932A3F5A25005ADC74 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		04C0A3952A3F5A4D005ADC74 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		04F2C2322A9C8F6400A62F60 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		04F2C2342A9C8F8500A62F60 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 		04C0A3852A3E0121005ADC74 /* session */ = {
 			isa = PBXGroup;
 			children = (
+				04F2C2302A9C8F2A00A62F60 /* Views */,
 				04C0A3882A3E0145005ADC74 /* SessionViewController.swift */,
 			);
 			path = session;
@@ -214,6 +219,23 @@
 				04C0A3932A3F5A25005ADC74 /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		04F2C2302A9C8F2A00A62F60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04F2C2312A9C8F5200A62F60 /* Timer */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04F2C2312A9C8F5200A62F60 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				04F2C2322A9C8F6400A62F60 /* ProgressView.swift */,
+				04F2C2342A9C8F8500A62F60 /* TimerView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F2C2352A9C8F8500A62F60 /* TimerView.swift in Sources */,
 				04ACCBE52A407CAC00CD3C5C /* WeekView.swift in Sources */,
 				041C572E2A367F39007C1574 /* OverviewViewController.swift in Sources */,
 				041C57402A3683A2007C1574 /* WATabBarController.swift in Sources */,
@@ -303,6 +326,7 @@
 				04C0A3822A3DFE54005ADC74 /* BaseViewController.swift in Sources */,
 				04C0A3962A3F5A4D005ADC74 /* BaseView.swift in Sources */,
 				04ACCBE72A40812000CD3C5C /* WeekdayView.swift in Sources */,
+				04F2C2332A9C8F6400A62F60 /* ProgressView.swift in Sources */,
 				041C572A2A367F39007C1574 /* AppDelegate.swift in Sources */,
 				041C572C2A367F39007C1574 /* SceneDelegate.swift in Sources */,
 			);

@@ -11,8 +11,8 @@ class SessionViewController: BaseViewController {
     
     // MARK: - Properties
     
-    private let timerView: WABaseInfoView = {
-        let v = WABaseInfoView(with: "Test", buttonTitle: "Test Button")
+    private let timerView: TimerView = {
+        let v = TimerView()
         return v
     }()
 }
@@ -29,7 +29,8 @@ extension SessionViewController {
         NSLayoutConstraint.activate([
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
             timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16)
+            timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            timerView.heightAnchor.constraint(equalToConstant: 340)
         ])
     }
     
