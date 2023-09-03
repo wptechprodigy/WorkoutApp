@@ -11,7 +11,7 @@ extension TimerView {
     
     final class ProgressView: UIView {
         func drawProgress(with percent: CGFloat) {
-            let circleFrame = UIScreen.main.bounds.width - (16 + 40) * 2
+            let circleFrame = UIScreen.main.bounds.width - ((16 + 40) * 2)
             let radius = circleFrame / 2
             let center = CGPoint(x: radius, y: radius)
             let startAngle = -CGFloat.pi * 7 / 6
@@ -40,11 +40,18 @@ extension TimerView {
             
             let dotAngle = CGFloat.pi * (7 / 6 - (8 / 6 * percent))
             let dotPoint = CGPoint(x: cos(-dotAngle) * radius + center.x,
-                                        y: sin(-dotAngle) * radius + center.y)
+                                   y: sin(-dotAngle) * radius + center.y)
             
             let dotPath = UIBezierPath()
             dotPath.move(to: dotPoint)
             dotPath.addLine(to: dotPoint)
+            
+            let bigDotLayer = CAShapeLayer()
+            bigDotLayer.path = dotPath.cgPath
+            bigDotLayer.fillColor = UIColor.clear.cgColor
+            bigDotLayer.strokeColor = R.Colors.active.cgColor
+            bigDotLayer.lineWidth = 20
+            bigDotLayer.lineCap = .round
             
             let dotLayer = CAShapeLayer()
             dotLayer.path = dotPath.cgPath
@@ -55,6 +62,7 @@ extension TimerView {
             
             layer.addSublayer(defaultCircleLayer)
             layer.addSublayer(circleLayer)
+            layer.addSublayer(bigDotLayer)
             layer.addSublayer(dotLayer)
         }
     }
